@@ -1,0 +1,14 @@
+{
+  "name": "zfpx-xxx-jw",
+  "version": "1.0.1",
+  "description": "- node package manager 模块的包管理器",
+  "main": "1.test.js",
+  "bin": {
+    "zfpx": "./bin/www.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

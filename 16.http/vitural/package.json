@@ -1,0 +1,16 @@
+{
+  "name": "16.http",
+  "version": "1.0.0",
+  "description": "- cdn  反向代理的技术 缓存 分发",
+  "main": "3000.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy": "^1.17.0"
+  }
+}

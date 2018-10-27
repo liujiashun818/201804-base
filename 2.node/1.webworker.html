@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 多线程 可以开一个工作线程
+    // 但是要归主线程所管理
+    // websocket
+    let worker  = new Worker('./1.worker.js');
+    worker.postMessage(10000);
+    worker.onmessage = function (e) {
+      console.log(e.data);
+    }
+    console.log('main thread')
+  </script>
+</body>
+</html>

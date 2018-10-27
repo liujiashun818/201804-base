@@ -1,0 +1,34 @@
+<%include header.html%>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <a href="/oauth2.0/application" class="btn btn-primary">创建应用</a>
+            <table class="table table-bordered">
+                <tr>
+                    <td>appId</td>
+                    <td>appKey</td>
+                    <td>客户端名称</td>
+                    <td>回调地址</td>
+                </tr>
+                <%
+                 for(let i=0;i<applications.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%=applications[i]._id%>
+                        </td>
+                        <td>
+                            <%=applications[i].appKey%>
+                        </td>
+                        <td>
+                            <%=applications[i].website%>
+                        </td>
+                        <td>
+                            <%=applications[i].redirect_uri%>
+                        </td>
+                    </tr>
+                    <%}
+                %>
+            </table>
+        </div>
+    </div>
+
+    <%include footer.html%>

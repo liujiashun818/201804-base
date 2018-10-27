@@ -1,0 +1,29 @@
+body {
+  color: red;
+}
+::-webkit-input-placeholder {
+  color: red;
+}
+:-moz-placeholder {
+  color: red;
+}
+::-moz-placeholder {
+  color: red;
+}
+:-ms-input-placeholder {
+  color: red;
+}
+::-ms-input-placeholder {
+  color: red;
+}
+::placeholder {
+  color: red;
+}
+#container {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+

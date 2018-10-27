@@ -1,0 +1,26 @@
+<%include header.html%>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <a href="/oauth2.0/permission" class="btn btn-primary">创建权限</a>
+            <table class="table table-bordered">
+                <tr>
+                    <td>名称</td>
+                    <td>路径</td>
+                </tr>
+                <%for(let i=0;i<permissions.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%=permissions[i].name%>
+                        </td>
+                        <td>
+                            <%=permissions[i].route%>
+                        </td>
+                    </tr>
+                    <%}%>
+            </table>
+        </div>
+    </div>
+    <script>
+        alert(1);
+    </script>
+    <%include footer.html%>

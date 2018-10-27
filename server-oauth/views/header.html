@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">(授权/资源)服务器</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <%
+                      if(user){%>
+                        <li>
+                            <a href="/users/signout">退出</a>
+                        </li>
+                        <li>
+                            <a href="/oauth2.0/applications">应用列表</a>
+                        </li>
+                        <li>
+                            <a href="/oauth2.0/permissions">权限列表</a>
+                        </li>
+                        <%}else{%>
+                            <li>
+                                <a href="/users/signup">注册</a>
+                            </li>
+                            <li>
+                                <a href="/users/signin">登录</a>
+                            </li>
+                            <%}
+                    %>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">

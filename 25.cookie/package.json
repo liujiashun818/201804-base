@@ -1,0 +1,19 @@
+{
+  "name": "25.cookie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookies": "^0.7.1",
+    "koa": "^2.5.2",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.2",
+    "uuid": "^3.3.2"
+  }
+}
